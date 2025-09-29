@@ -29,5 +29,27 @@ add TEIPB codebase, or some other old app with extensive codebase
     }
 </style>
 ---
+## ab ovo: The Schwarzenbach Project
+---
+## post rem: The Parzival Project
+---
+Data: Tustep
+Code: php, html, css
+
+The Code is 10+ years old --> PHP hasn't been updated in a few years. security issues grow.
+
+There won't be much funding to keep it up to date.
+---
+Tustep --> TEI XML done by the project team
+---
+separation of concerns: two repositories
+
+- Data repo
+  - TEI XML
+  - existDB & TEIPublisher configuration (incl. ODD)
+  - static API for the frontend
+- frontend repo
+
+---
 
 
