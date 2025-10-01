@@ -48,8 +48,56 @@ separation of concerns: two repositories
   - TEI XML
   - existDB & TEIPublisher configuration (incl. ODD)
   - static API for the frontend
+  - github action to create API
 - frontend repo
-
+  - svelte code
+  - Github action to build app
 ---
+## _building_ for the future
+
+```
+# create XAR archive from src/teipb
+- name: build
+  run: |
+    cd src/teipb
+    ant xar-local
+    pwd
+    mv ./build/parzival-0.2.xar ../../dist/parzival-0.2.xar     
+```
+---
+
+```
+build_site:
+    runs-on: ubuntu-latest
+    services:
+      existdb:
+        image: existdb/existdb:6.2.0
+        ports:
+          - 8081:8080
+```
+
+```
+steps:
+- name: Install dependencies
+  run: npm ci
+
+- name: start docker
+  env:
+    EXISTDB_USER: 'admin'
+    EXISTDB_PASS: ''
+    EXISTDB_SERVER: 'http://127.0.0.1:8081'
+  run: |
+    npm run installXar
+
+- name: build
+  env:
+    BASE_PATH: '/${{ github.event.repository.name }}'
+    NODE_OPTIONS: '--max_old_space_size=9000'
+  run: |
+    npm run build
+```
+---
+## As static as possible:
+After the build there is no script on any server running. Everything is client-side.
 
 
