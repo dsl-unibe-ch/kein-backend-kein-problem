@@ -11,7 +11,7 @@
 
 [https://dsl-unibe-ch.github.io/ieee-cist25](https://dsl-unibe-ch.github.io/ieee-cist25)
 
-![qr-code](img/qr.png) <!-- change qr code!>
+![qr-code](img/qr.png)
 
 ---
 
