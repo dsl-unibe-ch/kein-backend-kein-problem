@@ -5,8 +5,8 @@
 
 <img src="img/logo_cist25.jpg" alt="IEEE CiSt'25 logo" class="bg" style="width: 100px; right:0; top:-10px;"/>
 
-<p class="bg bt-left">Peter Dängeli, Sebastian Flick</p>
-<p class="bg bt-right">Data Science Lab, University of Berne</p>
+<p class="bg bt-left"><a href="mailto:peter.daengeli@unibe.ch">Peter Dängeli</a>, <a href="mailto:sebastian.flick@unibe.ch">Sebastian Flick</a></p>
+<p class="bg bt-right"><a href="https://dsl.unibe.ch" target="_blank">Data Science Lab</a>, <a href="https://dh.unibe.ch" target="_blank">Digital Humanities</a>, University of Berne</p>
 
 <style>
   h1 {
