@@ -49,6 +49,37 @@ add TEIPB codebase, or some other old app with extensive codebase
     }
 </style>
 ---
+## Project Management
+---
+### Creation of issues
+---
+### Kanban Boards
+---
+## Data generation
+---
+### Generation of targeted IIIF manifests
+---
+### Data import to transcription platforms
+---
+### Data export from transcription platforms and data transformation according to project needs
+---
+## Data management
+---
+### Versioning of textual data
+---
+### Managing ground truth data
+---
+## Data provision
+### Targeted generation of static assets
+---
+## Data publication
+---
+### Frontend development
+---
+### Web hosting as GitHub Page
+---
+### Code repository
+---
 ## ab ovo: The Schwarzenbach Project
 ---
 ## post rem: The Parzival Project
