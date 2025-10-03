@@ -1,10 +1,30 @@
 # Leveraging Code-Sharing Platforms for Textual Digitization
 
+<img src="img/unibe_logo.jpg" alt="unibe logo" class="bg" style="width: 100px; left:0; top:-10px;"/>
+
+
+<img src="img/logo_cist25.jpg" alt="IEEE CiSt'25 logo" class="bg" style="width: 100px; right:0; top:-10px;"/>
+
+<p class="bg bt-left">Peter Dängeli, Sebastian Flick</p>
+<p class="bg bt-right">Data Science Lab, University of Berne</p>
 
 <style>
-  .slide { background: url(img/dsl0.png) center; background-size: cover }
-#  .content { filter: invert() }
-  code { opacity: 0.8 }
+  h1 {
+    font: 2em var(--font-family) !important;
+  }
+  .bg {
+    position: absolute;
+    z-index: -1;
+    font-size: 0.7em;
+  }
+  .bt-left {
+    bottom: 0;
+    left: 0;
+  }
+  .bt-right {
+    bottom:0;
+    right: 0;
+  }
 </style>
 
 ---
