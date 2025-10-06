@@ -5,7 +5,7 @@
 <img src="img/logo_cist25.jpg" alt="IEEE CiSt'25 logo" class="bg" style="width: 100px; right:0; top:-10px;"/>
 
 <p class="bg bt-left"><a href="mailto:peter.daengeli@unibe.ch">Peter Daengeli</a>, <a href="mailto:sebastian.flick@unibe.ch">Sebastian Flick</a></p>
-<p class="bg bt-right"><a href="https://dsl.unibe.ch" target="_blank">Data Science Lab</a>, <a href="https://dh.unibe.ch" target="_blank">Digital Humanities</a>, University of Berne</p>
+<p class="bg bt-right"><a href="https://dsl.unibe.ch" target="_blank">Data Science Lab</a>, <a href="https://dh.unibe.ch" target="_blank">Digital Humanities</a>, University of Bern</p>
 
 <style>
   h1 {
@@ -57,6 +57,15 @@
 
 ![Code-sharing platforms](img/code-sharing-platforms-2.png)
 
+---
+
+## Five areas of application
+
+- Project management
+- Data generation
+- Data management
+- Data provision
+- Data publication
 
 ---
 
@@ -64,10 +73,10 @@
 issues, kanban boards
 ---
 ### Creation of issues
-[![issues in the parzival project](img/issue.png)](https://github.com/DHBern/presentation_parzival/issues/108)
+[![issues in the parzival project](img/project-management-issue.png)](https://github.com/DHBern/presentation_parzival/issues/108)
 ---
 ### Kanban Boards
-![github project of parzival](img/Kanban.png)
+![github project of parzival](img/project-management-kanban.png)
 ---
 <span class="small">project management, data generation, data management, data provision, data publication</span>
 
