@@ -38,7 +38,7 @@
 
 |||
 |:--:|:--:|
-|[![legacy-Parzival-Screenshot](img/image.png)](https://parzival.unibe.ch/parzdb/index.php) | ![vulnerabilities of our worst codebase](img/vulnerabilities.png)|
+|[![legacy-Parzival-Screenshot](img/intro-legacy-parzival.png)](https://parzival.unibe.ch/parzdb/index.php) | ![vulnerabilities of our worst codebase](img/intro-vulnerabilities.png)|
 
 <style>
     .slide img {
@@ -69,20 +69,58 @@ issues, kanban boards
 ### Kanban Boards
 ![github project of parzival](img/Kanban.png)
 ---
-## Data generation
+<span class="small">project management, data generation, data management, data provision, data publication</span>
+
+### Data generation: targeted IIIF manifests
+
+|||
+|:--:|:--:|
+|Problem|Projects often combine image resources from various providers|
+|Approach|We generate "meta" manifests that point to these resources. These manifests are used for a) further processing and b) presentation.|
+|CSP (Github)|Manifest generation from YAML files by commit.|
+
 ---
-### Generation of targeted IIIF manifests
+
+|||
+|:--:|:--:|
+|[![Generating IIIF manifests from YAML files by Git Commit](img/data-generation-iiif-manifests.png)]() | ![Result of the manifest generation](img/data-generation-iiif-manifest-index.png)|
+
 ---
-### Data import to transcription platforms
+### Data generation: import to transcription platforms
+
+|||
+|:--:|:--:|
+|Problem||
+|Approach||
+|CSP (Github)||
+
 ---
-### Data export from transcription platforms and data transformation according to project needs
+### Data generation: export from transcription platforms and data transformation according to project needs
+
+|||
+|:--:|:--:|
+|Problem||
+|Approach||
+|CSP (Github)||
+
 ---
-## Data management
+### Data management: versioning of textual data
+
+|||
+|:--:|:--:|
+|Problem||
+|Approach||
+|CSP (Github)||
+
 ---
-### Versioning of textual data
----
-## Data provision
-### Targeted generation of static assets
+### Data provision: targeted generation of static assets
+
+|||
+|:--:|:--:|
+|Problem||
+|Approach||
+|CSP (Github)||
+
 ---
 ## Data publication
 ---
