@@ -47,13 +47,13 @@
 </style>
 ---
 
-# Using code-sharing platforms
+## Using code-sharing platforms
 
-## to organise planning, development, and deployment
+### to organise planning, development, and deployment
 
 ---
 
-# Code-sharing platforms
+## Code-sharing platforms
 
 ![Code-sharing platforms](img/code-sharing-platforms-2.png)
 
