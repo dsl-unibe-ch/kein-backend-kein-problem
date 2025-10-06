@@ -1,7 +1,6 @@
 # Leveraging Code-Sharing Platforms for Textual Digitization
 
-<img src="img/unibe_logo.jpg" alt="unibe logo" class="bg" style="width: 100px; left:0; top:-10px;"/>
-
+<img src="img/university-of-bern-bern.png" alt="unibe logo" class="bg" style="width: 200px; left:0; top:-10px;"/>
 
 <img src="img/logo_cist25.jpg" alt="IEEE CiSt'25 logo" class="bg" style="width: 100px; right:0; top:-10px;"/>
 
@@ -35,13 +34,11 @@
 
 ---
 
-## What's the Problem: status quo
+## Keeping projects alive is hard
 
-Keeping projects alive is hard
-
-[![legacy-Parzival-Screenshot](img/image.png)](https://parzival.unibe.ch/parzdb/index.php)
-
-add TEIPB codebase, or some other old app with extensive codebase
+|||
+|:--:|:--:|
+|[![legacy-Parzival-Screenshot](img/image.png)](https://parzival.unibe.ch/parzdb/index.php) | ![vulnerabilities of our worst codebase](img/vulnerabilities.png)|
 
 <style>
     .slide img {
@@ -50,10 +47,13 @@ add TEIPB codebase, or some other old app with extensive codebase
 </style>
 ---
 ## Project Management
+issues, kanban boards
 ---
 ### Creation of issues
+[![issues in the parzival project](img/issue.png)](https://github.com/DHBern/presentation_parzival/issues/108)
 ---
 ### Kanban Boards
+![github project of parzival](img/Kanban.png)
 ---
 ## Data generation
 ---
@@ -67,55 +67,20 @@ add TEIPB codebase, or some other old app with extensive codebase
 ---
 ### Versioning of textual data
 ---
-### Managing ground truth data
----
 ## Data provision
 ### Targeted generation of static assets
 ---
 ## Data publication
 ---
 ### Frontend development
+
+using a modern framework like svelte and Metaframework like svelteKit ensures maintainability and a good developer experience which in turn means it's easier to find developers willing to work on the project.
 ---
 ### Web hosting as GitHub Page
 ---
-### Code repository
----
-## ab ovo: The Schwarzenbach Project
----
-## post rem: The Parzival Project
----
-Data: Tustep
-Code: php, html, css
+#### _building_ the frontend with _Actions_
 
-The Code is 10+ years old --> PHP hasn't been updated in a few years. security issues grow.
-
-There won't be much funding to keep it up to date.
----
-Tustep --> TEI XML done by the project team
----
-separation of concerns: two repositories
-
-- Data repo
-  - TEI XML
-  - existDB & TEIPublisher configuration (incl. ODD)
-  - static API for the frontend
-  - github action to create API
-- frontend repo
-  - svelte code
-  - Github action to build app
----
-## _building_ for the future
-
-```
-# create XAR archive from src/teipb
-- name: build
-  run: |
-    cd src/teipb
-    ant xar-local
-    pwd
-    mv ./build/parzival-0.2.xar ../../dist/parzival-0.2.xar     
-```
----
+<div style="display: flex; ">
 
 ```
 build_site:
@@ -147,8 +112,41 @@ steps:
   run: |
     npm run build
 ```
+
+</div>
+
+---
+### Code repository
+---
+#### Parzival Project
+separation of concerns: two repositories
+
+- Data repo
+  - TEI XML
+  - existDB & TEIPublisher configuration (incl. ODD)
+  - static API for the frontend
+  - github action to create API
+- frontend repo
+  - svelte code
+  - Github action to build app
 ---
 ## As static as possible:
 After the build there is no script on any server running. Everything is client-side.
+---
+Last slide.
+---
+
+
+## post rem: The Parzival Project
+---
+Data: Tustep
+Code: php, html, css
+
+The Code is 10+ years old --> PHP hasn't been updated in a few years. security issues grow.
+
+There won't be much funding to keep it up to date.
+---
+Tustep --> TEI XML done by the project team
+---
 
 
