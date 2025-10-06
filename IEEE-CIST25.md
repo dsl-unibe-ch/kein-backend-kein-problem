@@ -87,8 +87,8 @@ issues, kanban boards
 ## Data publication
 ---
 ### Frontend development
+![svelte-machine](img/svelte-machine-desktop.COMO42Ha.avif)
 
-using a modern framework like svelte and Metaframework like svelteKit ensures maintainability and a good developer experience which in turn means it's easier to find developers willing to work on the project.
 ---
 ### Web hosting as GitHub Page
 ---
@@ -135,14 +135,25 @@ steps:
 #### Parzival Project
 separation of concerns: two repositories
 
-- Data repo
+<div style="display: flex; ">
+<div>
+
+- [Data repo](https://github.com/DHBern/parzival-static-api)
   - TEI XML
   - existDB & TEIPublisher configuration (incl. ODD)
   - static API for the frontend
   - github action to create API
-- frontend repo
+
+</div>
+<div>
+
+- [frontend repo](https://github.com/DHBern/presentation_parzival)
   - svelte code
   - Github action to build app
+
+</div>
+</div>
+
 ---
 ## As static as possible:
 After the build there is no script on any server running. Everything is client-side.
