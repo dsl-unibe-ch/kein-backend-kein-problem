@@ -68,10 +68,6 @@
 - Data publication
 
 ---
-
-## Project Management
-issues, kanban boards
----
   
 <div class="footer" data-marked="1">
 
@@ -82,6 +78,15 @@ issues, kanban boards
 </div>
 
 ### Creation of issues
+
+|||
+|:--:|:--:|
+|Problem|Projects are spread over long stretches of time and tasks are created by multiple people|
+|Approach|We create issues that have due dates and responsible people attached to them.|
+|CSP (Github)|Github issues|
+
+---
+
 [![issues in the parzival project](img/project-management-issue.png)](https://github.com/DHBern/presentation_parzival/issues/108)
 ---
   
@@ -94,6 +99,15 @@ issues, kanban boards
 </div>
 
 ### Kanban Boards
+
+|||
+|:--:|:--:|
+|Problem|Keeping overview over larger numbers of issues and people working on them is hard|
+|Approach|We create kanban boards|
+|CSP (Github)|Github kanban boards|
+
+---
+
 ![github project of parzival](img/project-management-kanban.png)
 ---
   
@@ -266,7 +280,13 @@ issues, kanban boards
 
 </div>
 
-## Data publication
+## As static as possible
+
+|||
+|:--:|:--:|
+|Problem|Running backend servers and databases have significant maintenance and security implications and costs|
+|Approach|static websites are safe, fast and low-maintenance|
+|CSP (Github)|Github Actions & Pages|
 ---
   
 <div class="footer" data-marked="5">
@@ -278,6 +298,15 @@ issues, kanban boards
 </div>
 
 ### Frontend development
+
+|||
+|:--:|:--:|
+|Problem|occult & niche oldschool coding practices make onboarding and recruiting hard|
+|Approach|The use of modern javascript frameworks and standards allows for rapid development of high quality|
+|CSP (Github)|Github Action allow static website generation|
+
+---
+
 ![svelte-machine](img/svelte-machine-desktop.COMO42Ha.avif)
 
 ---
@@ -291,6 +320,13 @@ issues, kanban boards
 </div>
 
 ### Web hosting as GitHub Page
+
+|||
+|:--:|:--:|
+|Problem|hosting generated pages on custom virtual machines is high maintenance|
+|Approach|We use Github pages to have save, fast hosted static websites|
+|CSP (Github)|Github pages|
+
 ---
   
 <div class="footer" data-marked="5">
@@ -339,84 +375,4 @@ steps:
 </div>
 
 ---
-  
-<div class="footer" data-marked="5">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-### Code repository
----
-  
-<div class="footer" data-marked="5">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-#### Parzival Project
-separation of concerns: two repositories
-
-<div style="display: flex; ">
-<div>
-
-- [Data repo](https://github.com/DHBern/parzival-static-api)
-  - TEI XML
-  - existDB & TEIPublisher configuration (incl. ODD)
-  - static API for the frontend
-  - github action to create API
-
-</div>
-<div>
-
-- [frontend repo](https://github.com/DHBern/presentation_parzival)
-  - svelte code
-  - Github action to build app
-
-</div>
-</div>
-
----
-  
-<div class="footer" data-marked="5">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-## As static as possible:
-After the build there is no script on any server running. Everything is client-side.
----
-  
-<div class="footer" data-marked="1">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-Last slide.
----
-
-
-## post rem: The Parzival Project
----
-Data: Tustep
-Code: php, html, css
-
-The Code is 10+ years old --> PHP hasn't been updated in a few years. security issues grow.
-
-There won't be much funding to keep it up to date.
----
-Tustep --> TEI XML done by the project team
----
-
-
+Thank you for your attention!

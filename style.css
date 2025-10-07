@@ -3,6 +3,10 @@
 .slide img {
   max-height: calc(var(--content-height, 800px) * 0.8);
 }
+
+.slide table img {
+  max-width: calc(var(--content-width, 1400px) / 2);
+}
 code {
   opacity: 0.8;
 }
@@ -13,13 +17,12 @@ small {
 
 .footer {
   position: absolute;
-  bottom: -6%;
-  width: 90vw;
+  bottom: 0;
   text-align: center;
   font-size: 1.6rem;
   opacity: 0.6;
   td {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   &[data-marked="1"] td:nth-child(1) {
     opacity: 1;
