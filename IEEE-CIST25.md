@@ -287,6 +287,7 @@ Find our slides here:
 |Problem|Running backend servers and databases have significant maintenance and security implications and costs|
 |Approach|static websites are safe, fast and low-maintenance|
 |CSP (Github)|Github Actions & Pages|
+|Limitations| For dynamic functionalities (search, iiif, etc.) we use university wide services.|
 ---
   
 <div class="footer" data-marked="5">
@@ -304,8 +305,6 @@ Find our slides here:
 |Problem|occult & niche oldschool coding practices make onboarding and recruiting hard|
 |Approach|The use of modern javascript frameworks and standards allows for rapid development of high quality|
 |CSP (Github)|Github Action allow static website generation|
-
----
 
 ![svelte-machine](img/svelte-machine-desktop.COMO42Ha.avif)
 
@@ -359,17 +358,14 @@ steps:
 - name: start docker
   env:
     EXISTDB_USER: 'admin'
-    EXISTDB_PASS: ''
     EXISTDB_SERVER: 'http://127.0.0.1:8081'
-  run: |
-    npm run installXar
+  run: npm run installXar
 
 - name: build
   env:
     BASE_PATH: '/${{ github.event.repository.name }}'
     NODE_OPTIONS: '--max_old_space_size=9000'
-  run: |
-    npm run build
+  run: npm run build
 ```
 
 </div>
