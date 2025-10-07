@@ -83,7 +83,7 @@ Find our slides here:
 |:--:|:--:|
 |Problem|Projects are spread over long stretches of time and tasks are created by multiple people|
 |Approach|We create issues that have due dates and responsible people attached to them.|
-|CSP (GitHub)|GitHub issues|
+|CSP (GitHub)|GitHub **issues**|
 
 ---
 
@@ -104,7 +104,7 @@ Find our slides here:
 |:--:|:--:|
 |Problem|Keeping overview over larger numbers of issues and people working on them is hard|
 |Approach|We create kanban boards|
-|CSP (GitHub)|GitHub kanban boards|
+|CSP (GitHub)|GitHub **kanban boards**|
 
 ---
 
@@ -125,7 +125,7 @@ Find our slides here:
 |:--:|:--:|
 |Problem|Projects often combine image resources from various providers|
 |Approach|We generate "meta" manifests that point to these resources. These manifests are used for a) further processing and b) presentation.|
-|CSP (GitHub)|Manifest generation from YAML files by commit.|
+|CSP (GitHub)|Manifest generation from YAML files by **commit**.|
 
 ---
   
@@ -157,7 +157,7 @@ Find our slides here:
 |:--:|:--:|
 |Problem|Uploading images to e.g. Transkribus is often laborious (getting images, uploading, keeping track of file names/IDs, granting access, etc).|
 |Approach|Making use of the previously generated IIIF manifests to automate the whole workflow.|
-|CSP (GitHub)|By opening an issue and specifying manifests and a target collection, the GitHub action fetches IIIF images and uploads them to Transkribus.|
+|CSP (GitHub)|By opening an **issue** and specifying manifests and a target collection, the GitHub action fetches IIIF images and uploads them to Transkribus.|
 
 ---
   
@@ -189,7 +189,7 @@ Find our slides here:
 |:--:|:--:|
 |Problem|Exporting transcriptions from Transkribus may be tricky as the platform uses differing file names and the built-in transformations do not cover project needs.|
 |Approach|Making use of project IDs and the previously generated IIIF manifests to export and transform transcriptions according to project guidelines.|
-|CSP (GitHub)|By opening an issue and specifying a document ID, the GitHub action fetches the transcriptions, references the correct image file names, and applies customised structural transformations.|
+|CSP (GitHub)|By opening an **issue** and specifying a document ID, the GitHub action fetches the transcriptions, references the correct image file names, and applies customised structural transformations.|
 
 ---
   
@@ -221,8 +221,8 @@ Find our slides here:
 |||
 |:--:|:--:|
 |Problem|TEI files are stored on a server during manual editing and annotation. It is not trivial to keep track of modifications and project progress without putting a significant burden on editors.|
-|Approach|Automated revision control (Git) to track changes and have an additional backup.|
-|CSP (GitHub)|At specified intervals (of e.g. 6 hours), all files with changes are fetched and saved to the GitHub repository in a scheduled action.|
+|Approach|Automated revision control (Git) to track changes and to have an additional backup.|
+|CSP (GitHub)|At specified intervals (of e.g. 6 hours), all files with changes are fetched and saved to the GitHub repository in a **scheduled action**.|
 |Limitation|Commits reflect temporal snapshots, not tasks or workflow steps.|
 
 ---
@@ -255,7 +255,7 @@ Find our slides here:
 |:--:|:--:|
 |Problem|Specific data representations are required for presentational outputs. At the same time, we are not able to keep customised dynamic systems running over time.|
 |Approach|Pre-generation of intermediate and distribution formats of transcriptions, annotations, and other project resources.|
-|CSP (GitHub)|Providing results of generation pipelines (XProc, XSLT) as GitHub Page ("static API").|
+|CSP (GitHub)|Providing results of generation pipelines (XProc, XSLT) as **GitHub Page** ("static API").|
 
 ---
   
@@ -287,7 +287,7 @@ Find our slides here:
 |:--:|:--:|
 |Problem|Running backend servers and databases have significant maintenance and security implications and costs.|
 |Approach|Static websites are safe, fast and low-maintenance.|
-|CSP (GitHub)|GitHub Actions & Pages|
+|CSP (GitHub)|GitHub **Actions** & **Pages**|
 |Limitations| For dynamic functionalities (search, IIIF, etc.) we use university wide services.|
 
 ---
@@ -306,7 +306,7 @@ Find our slides here:
 |:--:|:--:|
 |Problem|Occult & niche oldschool coding practices make onboarding and recruiting hard.|
 |Approach|The use of modern javascript frameworks and standards allows for rapid development of high quality.|
-|CSP (GitHub)|Static website generation using GitHub Actions (far beyond SSG tools like Jekyll).|
+|CSP (GitHub)|Static website generation using GitHub **Actions** (far beyond SSG tools like Jekyll).|
 
 ![svelte-machine](img/svelte-machine-desktop.COMO42Ha.avif)
 
@@ -326,7 +326,7 @@ Find our slides here:
 |:--:|:--:|
 |Problem|Hosting generated pages on custom virtual machines is high(er) maintenance.|
 |Approach|We use GitHub pages to serve safe and fast hosted static websites.|
-|CSP (GitHub)|GitHub pages|
+|CSP (GitHub)|GitHub **Pages**|
 
 ---
   
