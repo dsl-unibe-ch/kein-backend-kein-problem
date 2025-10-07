@@ -41,8 +41,8 @@
 |[![legacy-Parzival-Screenshot](img/intro-legacy-parzival.png)](https://parzival.unibe.ch/parzdb/index.php) | ![vulnerabilities of our worst codebase](img/intro-vulnerabilities.png)|
 
 <style>
-    .slide img {
-        max-height: 500px;        
+  .slide img {
+    max-height: 500px;        
     }
 </style>
 ---
@@ -72,12 +72,39 @@
 ## Project Management
 issues, kanban boards
 ---
+  
+<div class="footer" data-marked="1">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 ### Creation of issues
 [![issues in the parzival project](img/project-management-issue.png)](https://github.com/DHBern/presentation_parzival/issues/108)
 ---
+  
+<div class="footer" data-marked="1">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 ### Kanban Boards
 ![github project of parzival](img/project-management-kanban.png)
 ---
+  
+<div class="footer" data-marked="1">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 <span class="small">project management, data generation, data management, data provision, data publication</span>
 
 ### Data generation: targeted IIIF manifests
@@ -89,12 +116,29 @@ issues, kanban boards
 |CSP (Github)|Manifest generation from YAML files by commit.|
 
 ---
+  
+<div class="footer" data-marked="2">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
 
 |||
 |:--:|:--:|
 |[![Generating IIIF manifests from YAML files by Git Commit](img/data-generation-iiif-manifests.png)]() | ![Result of the manifest generation](img/data-generation-iiif-manifest-index.png)|
 
 ---
+  
+<div class="footer" data-marked="2">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 ### Data generation: import to transcription platforms
 
 |||
@@ -104,12 +148,29 @@ issues, kanban boards
 |CSP (Github)|By opening an issue and specifying manifests and a target collection, the Github action fetches IIIF images and uploads them to Transkribus.|
 
 ---
+  
+<div class="footer" data-marked="2">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
 
 |||
 |:--:|:--:|
 |[![Uploading IIIF images to Transkribus by Github issue](img/data-generation-transkribus-upload.png)]() | ![Result of the Transkribus upload](img/data-generation-transkribus-upload-done.png)|
 
 ---
+  
+<div class="footer" data-marked="2">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 ### Data generation: export from transcription platforms and data transformation according to project needs
 
 |||
@@ -119,6 +180,14 @@ issues, kanban boards
 |CSP (Github)|By opening an issue and specifying a document ID, the Github action fetches the transcriptions, references the correct image file names, and applies customised structural transformations.|
 
 ---
+  
+<div class="footer" data-marked="2">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
 
 |||
 |:--:|:--:|
@@ -126,6 +195,15 @@ issues, kanban boards
 
 
 ---
+  
+<div class="footer" data-marked="3">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 ### Data management: versioning of textual data
 
 |||
@@ -135,12 +213,29 @@ issues, kanban boards
 |CSP (Github)|At specified intervals (of e.g. 6 hours), all files with changes are fetched and saved to the Github repository in a scheduled action.|
 
 ---
+  
+<div class="footer" data-marked="3">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
 
 |||
 |:--:|:--:|
 |[![Frequent data commits in scheduled action.](img/data-management-scheduled-backup.png)]() | ![Scheduled commits](img/data-management-backup-commits.png)|
 
 ---
+  
+<div class="footer" data-marked="4">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 ### Data provision: targeted generation of static assets
 
 |||
@@ -150,20 +245,64 @@ issues, kanban boards
 |CSP (Github)|Providing results of generation pipelines (XProc, XSLT) as Github Page ("static API").|
 
 ---
+  
+<div class="footer" data-marked="4">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
 
 |||
 |:--:|:--:|
 |[![Generation pipeline for static (intermediary) outputs.](img/data-provision-static-api.png)]() | ![Generated outputs ("static API").](img/data-provision-static-api-index.png)|
 
 ---
+  
+<div class="footer" data-marked="5">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 ## Data publication
 ---
+  
+<div class="footer" data-marked="5">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 ### Frontend development
 ![svelte-machine](img/svelte-machine-desktop.COMO42Ha.avif)
 
 ---
+  
+<div class="footer" data-marked="5">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 ### Web hosting as GitHub Page
 ---
+  
+<div class="footer" data-marked="5">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 #### _building_ the frontend with _Actions_
 
 <div style="display: flex; ">
@@ -202,8 +341,26 @@ steps:
 </div>
 
 ---
+  
+<div class="footer" data-marked="5">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 ### Code repository
 ---
+  
+<div class="footer" data-marked="5">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 #### Parzival Project
 separation of concerns: two repositories
 
@@ -227,9 +384,27 @@ separation of concerns: two repositories
 </div>
 
 ---
+  
+<div class="footer" data-marked="5">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 ## As static as possible:
 After the build there is no script on any server running. Everything is client-side.
 ---
+  
+<div class="footer" data-marked="1">
+
+||||||
+|:--:|:--:|:--:|:--:|:--:|
+| project management | data generation | data management | data provision | data publication |
+
+</div>
+
 Last slide.
 ---
 
