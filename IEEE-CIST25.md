@@ -50,14 +50,19 @@ Find our slides here:
 ---
 
 ## Using code-sharing platforms
+<div style="display: flex;">
+<div>
 
-### to organise planning, development, and deployment
+to organise
+- planning
+- development
+- deployment
 
----
-
-## Code-sharing platforms
+</div>
 
 ![Code-sharing platforms](img/code-sharing-platforms-2.png)
+
+</div>
 
 ---
 
