@@ -1,6 +1,6 @@
-# parzival-proto4digEd
+# ieee-cist25
 
-Presentation for the Workshop Proto4DigEd 2024
+Presentation for the 8th IEEE Conference on Information Science and Technology (IEEE CiSt'25) / 4th IEEE Conference on Digital Preservation and processing technology of Written Heritage (IEEE DPWH)
 
 ## Installation and usage
 
@@ -17,4 +17,4 @@ Or simlply `eloc deck.md`
 
 | presentation                              | command                                                             |
 | ----------------------------------------- | ------------------------------------------------------------------- |
-| [ieee-cist25](ieee-cist25.md) | `npm exec -- eloc open ieee-cist25.md --css "style.css"` |
+| [ieee-cist25](IEEE-CIST25.md) | `npm exec -- eloc open ieee-cist25.md --css "style.css"` |

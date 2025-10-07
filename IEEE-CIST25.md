@@ -105,8 +105,6 @@ issues, kanban boards
 
 </div>
 
-<span class="small">project management, data generation, data management, data provision, data publication</span>
-
 ### Data generation: targeted IIIF manifests
 
 |||
