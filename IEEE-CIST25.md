@@ -4,8 +4,8 @@
 
 <img src="img/logo_cist25.jpg" alt="IEEE CiSt'25 logo" class="bg" style="width: 100px; right:0; top:-10px;"/>
 
-<p class="bg bt-left"><a href="mailto:peter.daengeli@unibe.ch">Peter Dängeli</a>, <a href="mailto:sebastian.flick@unibe.ch">Sebastian Flick</a></p>
-<p class="bg bt-right"><a href="https://dsl.unibe.ch" target="_blank">Data Science Lab</a>, <a href="https://dh.unibe.ch" target="_blank">Digital Humanities</a>, University of Berne</p>
+<p class="bg bt-left"><a href="mailto:peter.daengeli@unibe.ch">Peter Daengeli</a>, <a href="mailto:sebastian.flick@unibe.ch">Sebastian Flick</a></p>
+<p class="bg bt-right"><a href="https://dsl.unibe.ch" target="_blank">Data Science Lab</a>, <a href="https://dh.unibe.ch" target="_blank">Digital Humanities</a>, University of Bern</p>
 
 <style>
   h1 {
@@ -38,7 +38,7 @@
 
 |||
 |:--:|:--:|
-|[![legacy-Parzival-Screenshot](img/image.png)](https://parzival.unibe.ch/parzdb/index.php) | ![vulnerabilities of our worst codebase](img/vulnerabilities.png)|
+|[![legacy-Parzival-Screenshot](img/intro-legacy-parzival.png)](https://parzival.unibe.ch/parzdb/index.php) | ![vulnerabilities of our worst codebase](img/intro-vulnerabilities.png)|
 
 <style>
     .slide img {
@@ -57,6 +57,15 @@
 
 ![Code-sharing platforms](img/code-sharing-platforms-2.png)
 
+---
+
+## Five areas of application
+
+- Project management
+- Data generation
+- Data management
+- Data provision
+- Data publication
 
 ---
 
@@ -64,25 +73,88 @@
 issues, kanban boards
 ---
 ### Creation of issues
-[![issues in the parzival project](img/issue.png)](https://github.com/DHBern/presentation_parzival/issues/108)
+[![issues in the parzival project](img/project-management-issue.png)](https://github.com/DHBern/presentation_parzival/issues/108)
 ---
 ### Kanban Boards
-![github project of parzival](img/Kanban.png)
+![github project of parzival](img/project-management-kanban.png)
 ---
-## Data generation
+<span class="small">project management, data generation, data management, data provision, data publication</span>
+
+### Data generation: targeted IIIF manifests
+
+|||
+|:--:|:--:|
+|Problem|Projects often combine image resources from various providers|
+|Approach|We generate "meta" manifests that point to these resources. These manifests are used for a) further processing and b) presentation.|
+|CSP (Github)|Manifest generation from YAML files by commit.|
+
 ---
-### Generation of targeted IIIF manifests
+
+|||
+|:--:|:--:|
+|[![Generating IIIF manifests from YAML files by Git Commit](img/data-generation-iiif-manifests.png)]() | ![Result of the manifest generation](img/data-generation-iiif-manifest-index.png)|
+
 ---
-### Data import to transcription platforms
+### Data generation: import to transcription platforms
+
+|||
+|:--:|:--:|
+|Problem|Uploading images to e.g. Transkribus is often laborious (getting images, uploading, keeping track of file names/IDs, granting access, etc).|
+|Approach|Making use of the previously generated IIIF manifests to automate the whole workflow.|
+|CSP (Github)|By opening an issue and specifying manifests and a target collection, the Github action fetches IIIF images and uploads them to Transkribus.|
+
 ---
-### Data export from transcription platforms and data transformation according to project needs
+
+|||
+|:--:|:--:|
+|[![Uploading IIIF images to Transkribus by Github issue](img/data-generation-transkribus-upload.png)]() | ![Result of the Transkribus upload](img/data-generation-transkribus-upload-done.png)|
+
 ---
-## Data management
+### Data generation: export from transcription platforms and data transformation according to project needs
+
+|||
+|:--:|:--:|
+|Problem|Exporting transcriptions from Transkribus may be tricky as the platform uses differing file names and the built-in transformations do not cover project needs.|
+|Approach|Making use of project IDs and the previously generated IIIF manifests to export and transform transcriptions according to project guidelines.|
+|CSP (Github)|By opening an issue and specifying a document ID, the Github action fetches the transcriptions, references the correct image file names, and applies customised structural transformations.|
+
 ---
-### Versioning of textual data
+
+|||
+|:--:|:--:|
+|[![Exporting transcriptions from Transkribus by Github issue](img/data-generation-transkribus-export.png)]() | ![Result of the manifest generation](img/data-generation-transkribus-export-done.png)|
+
+
 ---
-## Data provision
-### Targeted generation of static assets
+### Data management: versioning of textual data
+
+|||
+|:--:|:--:|
+|Problem|TEI files are stored on a server during manual editing and annotation. It is not trivial to keep track of modifications and project progress without putting a significant burden on editors.|
+|Approach|Automated revision control (Git) to track changes and have an additional backup.|
+|CSP (Github)|At specified intervals (of e.g. 6 hours), all files with changes are fetched and saved to the Github repository in a scheduled action.|
+
+---
+
+|||
+|:--:|:--:|
+|[![Frequent data commits in scheduled action.](img/data-management-scheduled-backup.png)]() | ![Scheduled commits](img/data-management-backup-commits.png)|
+
+---
+### Data provision: targeted generation of static assets
+
+|||
+|:--:|:--:|
+|Problem|Specific data representations are required for presentational outputs. At the same time, we are not able to keep customised dynamic systems running over time.|
+|Approach|Pre-generation of intermediate and distribution formats of transcriptions, annotations, and other project resources.|
+|CSP (Github)|Providing results of generation pipelines (XProc, XSLT) as Github Page ("static API").|
+
+---
+
+|||
+|:--:|:--:|
+|[![Generation pipeline for static (intermediary) outputs.](img/data-provision-static-api.png)]() | ![Generated outputs ("static API").](img/data-provision-static-api-index.png)|
+
 ---
 ## Data publication
 ---

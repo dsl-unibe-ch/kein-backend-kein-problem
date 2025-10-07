@@ -17,4 +17,4 @@ Or simlply `eloc deck.md`
 
 | presentation                              | command                                                             |
 | ----------------------------------------- | ------------------------------------------------------------------- |
-| [parzival-proto4digEd](parzival-proto4digEd.md) | `npm exec -- eloc open parzival-proto4digEd.md --css "style.css"` |
+| [ieee-cist25](ieee-cist25.md) | `npm exec -- eloc open ieee-cist25.md --css "style.css"` |
