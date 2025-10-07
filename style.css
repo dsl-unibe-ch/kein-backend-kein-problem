@@ -7,6 +7,25 @@
 .slide table img {
   max-width: calc(var(--content-width, 1400px) / 2);
 }
+.slide h3 + table:not(:has(img)),
+.slide h2 + table:not(:has(img)) {
+  font-size: 0.8em;
+  border-collapse: collapse;
+  width: 100%;
+
+  th,
+  td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 0.5rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  tr:last-child th,
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
 code {
   opacity: 0.8;
 }
