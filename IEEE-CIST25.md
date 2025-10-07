@@ -1,5 +1,7 @@
 # Leveraging Code-Sharing Platforms for Textual Digitization
-
+<div style="align-self: start;">
+07.10.2025
+</div>
 <img src="img/university-of-bern-bern.png" alt="unibe logo" class="bg" style="width: 200px; left:0; top:-10px;"/>
 
 <img src="img/logo_cist25.jpg" alt="IEEE CiSt'25 logo" class="bg" style="width: 100px; right:0; top:-10px;"/>
