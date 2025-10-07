@@ -27,7 +27,7 @@
 </style>
 
 ---
-
+Find our slides here:
 [https://dsl-unibe-ch.github.io/ieee-cist25](https://dsl-unibe-ch.github.io/ieee-cist25)
 
 ![qr-code](img/qr.png)
@@ -111,7 +111,7 @@
 ![github project of parzival](img/project-management-kanban.png)
 ---
   
-<div class="footer" data-marked="1">
+<div class="footer" data-marked="2">
 
 ||||||
 |:--:|:--:|:--:|:--:|:--:|
