@@ -345,6 +345,12 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 ![svelte-machine](img/svelte-machine-desktop.COMO42Ha.avif)
 
 ---
+
+Anpassung und Nutzung von SvelteKit für statische Websites
+
+SvelteKit bietet eine moderne Entwicklungsumgebung die sehr versatil ist: heisst: anpassung an unseren use-case ist nötig.
+
+---
   
 <div class="footer" data-marked="5">
 
