@@ -46,8 +46,9 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 ## Struktur und Rollen
 
-* Team von 4-5 KollegInnen
+* Team von 5-7 KollegInnen
 * Zuständig für den Bereich *Digital Humanities* (aka *DRUIDS*, "Digital Research, User Interfaces and Data Science for the Humanities")
+* Zurzeit betreuen wir 34 Projekte (laufend oder in Planung)
 * Übergreifende Koordination durch einen Domänenleiter
 
 ---
@@ -129,9 +130,11 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 ### Project management: Kanban Boards
 
 |||
+|:--:|:--:|
 |Problem|Die Übersicht über viele Issues und der daran arbeitenden Personen ist schwierig|
 |Approach|Wir erstellen Kanban Boards|
 |CSP (GitHub)|GitHub **kanban boards**|
+|Limitation|Das zum vollen Projektmanagement fehlen einige Features. (Zeiterfassung, etc.)|
 
 ---
 
