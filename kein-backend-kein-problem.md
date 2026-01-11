@@ -7,7 +7,7 @@ Universität Rostock, Ringvorlesung „Digital Humanities im Fokus: Methoden, An
 
 
 <p class="bg bt-left"><a href="mailto:peter.daengeli@unibe.ch">Peter Daengeli</a>, <a href="mailto:sebastian.flick@unibe.ch">Sebastian Flick</a></p>
-<p class="bg bt-right"><a href="https://dsl.unibe.ch" target="_blank">Data Science Lab</a>, <a href="https://dh.unibe.ch" target="_blank">Digital Humanities</a>, University of Bern</p>
+<p class="bg bt-right"><a href="https://dsl.unibe.ch" target="_blank">Data Science Lab</a>, <a href="https://dh.unibe.ch" target="_blank">Digital Humanities</a>, Universität Bern</p>
 
 <style>
   h1 {
@@ -39,6 +39,8 @@ Link zu dieser Präsentation:
 ## Data Science Lab (DSL)
 
 ![Data Science Lab, Universität Bern](img/dsl-site.png)
+
+https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 ---
 
