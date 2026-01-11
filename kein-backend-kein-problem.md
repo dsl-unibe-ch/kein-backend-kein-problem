@@ -30,7 +30,7 @@
 
 ---
 Find our slides here:
-[https://dsl-unibe-ch.github.io/ieee-cist25](https://dsl-unibe-ch.github.io/ieee-cist25)
+[https://dsl-unibe-ch.github.io/kein-backend-kein-problem](https://dsl-unibe-ch.github.io/kein-backend-kein-problem)
 
 ![qr-code](img/qr.png)
 
