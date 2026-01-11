@@ -58,7 +58,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 ---
 
-## Keeping projects alive is hard
+## Projekte am Leben zu erhalten ist schwierig
 
 |||
 |:--:|:--:|
@@ -71,24 +71,23 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 </style>
 ---
 
-## Using code-sharing platforms
+## Code-sharing-Plattformen nutzen
 <div style="display: flex;">
 <div>
 
-to organise
-- planning
-- development
-- deployment
+- Planung
+- Development
+- Deployment
 
 </div>
 
-![Code-sharing platforms](img/code-sharing-platforms-2.png)
+![Code-sharing-Plattformen](img/code-sharing-platforms-2.png)
 
 </div>
 
 ---
 
-## Five areas of application
+## Anwendungsgebiete
 
 - Project management
 - Data generation
@@ -106,12 +105,12 @@ to organise
 
 </div>
 
-### Project management: creation of issues
+### Project management: Issues erstellen
 
 |||
 |:--:|:--:|
-|Problem|Projects are spread over long stretches of time and tasks are created by multiple people|
-|Approach|We create issues that have due dates and responsible people attached to them.|
+|Problem|Projekte haben eine lange Dauer und mehrere Mitarbeiter|
+|Approach|Wir erstellen Issues, denen wir Fälligkeiten und verantwortliche Personen zuweisen.|
 |CSP (GitHub)|GitHub **issues**|
 
 ---
@@ -127,12 +126,11 @@ to organise
 
 </div>
 
-### Project management: kanban boards
+### Project management: Kanban Boards
 
 |||
-|:--:|:--:|
-|Problem|Keeping overview over larger numbers of issues and people working on them is hard|
-|Approach|We create kanban boards|
+|Problem|Die Übersicht über viele Issues und der daran arbeitenden Personen ist schwierig|
+|Approach|Wir erstellen Kanban Boards|
 |CSP (GitHub)|GitHub **kanban boards**|
 
 ---
@@ -148,13 +146,13 @@ to organise
 
 </div>
 
-### Data generation: targeted IIIF manifests
+### Data generation: gezielte IIIF Manifeste
 
 |||
 |:--:|:--:|
-|Problem|Projects often combine image resources from various providers|
-|Approach|We generate "meta" manifests that point to these resources. These manifests are used for a) further processing and b) presentation.|
-|CSP (GitHub)|Manifest generation from YAML files by **commit**.|
+|Problem|Projekte kombinieren häufig Bildressourcen von verschiedenen Anbietern|
+|Ansatz|Wir erstellen „Meta“-Manifeste, die auf diese Ressourcen verweisen. Diese Manifeste werden a) zur weiteren Verarbeitung und b) zur Präsentation verwendet.|
+|CSP (GitHub)|Manifest Generierung aus YAML-Dateien per **commit**.|
 
 ---
   
@@ -180,13 +178,13 @@ to organise
 
 </div>
 
-### Data generation: import to transcription platforms
+### Data generation: import zu Transkriptionsplattformen
 
 |||
 |:--:|:--:|
-|Problem|Uploading images to e.g. Transkribus is often laborious (getting images, uploading, keeping track of file names/IDs, granting access, etc).|
-|Approach|Making use of the previously generated IIIF manifests to automate the whole workflow.|
-|CSP (GitHub)|By opening an **issue** and specifying manifests and a target collection, the GitHub action fetches IIIF images and uploads them to Transkribus.|
+|Problem|Das Hochladen von Bildern (z. B. zu Transkribus) ist oft mühsam — Beschaffung der Bilder, Upload, Nachverfolgung von Dateinamen/IDs, Zugriffsfreigaben usw.|
+|Approach|Wir nutzen die zuvor erzeugten IIIF‑Manifeste, um den gesamten Workflow zu automatisieren.|
+|CSP (GitHub)|Durch das Öffnen eines **issue** und die Angabe der Manifeste sowie einer Ziel‑Collection holt eine GitHub‑Action die IIIF‑Bilder und lädt sie zu Transkribus hoch.|
 
 ---
   
@@ -212,13 +210,13 @@ to organise
 
 </div>
 
-### Data generation: export from transcription platforms and data transformation
+### Data generation: export aus Transkriptionsplattformen und Daten-Transformationen
 
 |||
 |:--:|:--:|
-|Problem|Exporting transcriptions from Transkribus may be tricky as the platform uses differing file names and the built-in transformations do not cover project needs.|
-|Approach|Making use of project IDs and the previously generated IIIF manifests to export and transform transcriptions according to project guidelines.|
-|CSP (GitHub)|By opening an **issue** and specifying a document ID, the GitHub action fetches the transcriptions, references the correct image file names, and applies customised structural transformations.|
+|Problem|Das Exportieren von Transkriptionen aus Transkribus kann knifflig sein, da die Plattform unterschiedliche Dateinamen verwendet und die eingebauten Transformationen nicht den Projektanforderungen entsprechen.|
+|Approach|Nutzung von Projekt‑IDs und den zuvor erzeugten IIIF‑Manifests, um Transkriptionen gemäss den Projektvorgaben zu exportieren und zu transformieren.|
+|CSP (GitHub)|Durch das Öffnen eines **issue** und die Angabe einer Dokument‑ID holt eine GitHub‑Action die Transkriptionen, ordnet die korrekten Bilddateinamen zu und wendet kundenspezifische strukturelle Transformationen an.|
 
 ---
   
@@ -245,14 +243,16 @@ to organise
 
 </div>
 
-### Data management: versioning of textual data
+### Data management: Versionierung von Textdaten
 
 |||
 |:--:|:--:|
-|Problem|TEI files are stored on a server during manual editing and annotation. It is not trivial to keep track of modifications and project progress without putting a significant burden on editors.|
-|Approach|Automated revision control (Git) to track changes and to have an additional backup.|
-|CSP (GitHub)|At specified intervals (of e.g. 6 hours), all files with changes are fetched and saved to the GitHub repository in a **scheduled action**.|
-|Limitation|Commits reflect temporal snapshots, not tasks or workflow steps.|
+|||
+|:--:|:--:|
+|Problem|TEI-Dateien werden während der manuellen Bearbeitung und Annotation auf einem Server gespeichert. Änderungen und Projektfortschritt lassen sich nicht ohne erheblichen Mehraufwand für die Editierenden verfolgen.|
+|Approach|Automatisierte Versionskontrolle (Git) zur Nachverfolgung von Änderungen und als zusätzliche Sicherung.|
+|CSP (GitHub)|In festgelegten Intervallen (z. B. alle 6 Stunden) werden alle veränderten Dateien abgeholt und per **scheduled action** im GitHub-Repository gesichert.|
+|Limitation|Commits bilden zeitliche Schnappschüsse ab, nicht Aufgaben oder Workflow‑Schritte.|
 
 ---
   
@@ -278,13 +278,13 @@ to organise
 
 </div>
 
-### Data provision: generation of static assets
+### Data provision: Generierung statischer Outputs
 
 |||
 |:--:|:--:|
-|Problem|Specific data representations are required for presentational outputs. At the same time, we are not able to keep customised dynamic systems running over time.|
-|Approach|Pre-generation of intermediate and distribution formats of transcriptions, annotations, and other project resources.|
-|CSP (GitHub)|Providing results of generation pipelines (XProc, XSLT) as **GitHub Page** ("static API").|
+|Problem|Für Präsentationsausgaben werden spezifische Datenrepräsentationen benötigt. Gleichzeitig sind wir nicht in der Lage, massgefertigte dynamische Systeme langfristig am Laufen zu halten.|
+|Approach|Vorabgenerierung von Zwischen- und Distributionsformaten für Transkriptionen, Annotationen und andere Projektressourcen.|
+|CSP (GitHub)|Bereitstellung der Ergebnisse der Generierungspipelines (XProc, XSLT) als **GitHub Page** („static API“).|
 
 ---
   
@@ -314,10 +314,12 @@ to organise
 
 |||
 |:--:|:--:|
-|Problem|Running backend servers and databases have significant maintenance and security implications and costs.|
-|Approach|Static websites are safe, fast and low-maintenance.|
-|CSP (GitHub)|GitHub **Actions** & **Pages**|
-|Limitations| For dynamic functionalities (search, IIIF, etc.) we use university wide services.|
+|||
+|:--:|:--:|
+|Problem|Der Betrieb von Backend‑Servern und Datenbanken verursacht hohen Wartungsaufwand, Sicherheitsrisiken und laufende Kosten.|
+|Approach|Statische Websites sind sicher, schnell und wartungsarm.|
+|CSP (GitHub)|GitHub **Actions** und **Pages**|
+|Limitation|Für dynamische Funktionalitäten (Suche, IIIF usw.) nutzen wir universitätsweite Dienste.|
 
 ---
   
@@ -329,13 +331,13 @@ to organise
 
 </div>
 
-### Data publication: frontend development
+### Data publication: Frontend Entwicklung
 
 |||
 |:--:|:--:|
-|Problem|Occult & niche oldschool coding practices make onboarding and recruiting hard.|
-|Approach|The use of modern javascript frameworks and standards allows for rapid development of high quality.|
-|CSP (GitHub)|Static website generation using GitHub **Actions** (far beyond SSG tools like Jekyll).|
+|Problem|Obskure, Nischen‑Programmierpraktiken erschweren Onboarding und Rekrutierung.|
+|Approach|Der Einsatz moderner JavaScript‑Frameworks und Standards ermöglicht schnelle Entwicklung qualitativ hochwertiger Lösungen.|
+|CSP (GitHub)|Statische Website‑Generierung mit GitHub **Actions** (geht weit über SSG‑Tools wie Jekyll hinaus).|
 
 ![svelte-machine](img/svelte-machine-desktop.COMO42Ha.avif)
 
@@ -349,12 +351,12 @@ to organise
 
 </div>
 
-### Data publication: web hosting as GitHub Page
+### Data publication: web hosting mit Github Pages
 
 |||
 |:--:|:--:|
-|Problem|Hosting generated pages on custom virtual machines is high(er) maintenance.|
-|Approach|We use GitHub pages to serve safe and fast hosted static websites.|
+|Problem|Das Hosten generierter Seiten auf eigenen virtuellen Maschinen ist mit höherem Wartungsaufwand verbunden.|
+|Approach|Wir nutzen GitHub Pages, um sichere und schnelle statische Websites bereitzustellen.|
 |CSP (GitHub)|GitHub **Pages**|
 
 ---
@@ -367,7 +369,7 @@ to organise
 
 </div>
 
-#### _building_ the frontend with _Actions_
+#### Das Frontend _builden_ mit _Actions_
 
 <div style="display: flex; ">
 
@@ -402,4 +404,4 @@ steps:
 </div>
 
 ---
-Thank you for your attention!
+Vielen Dank für Ihre Aufmerksamkeit!
