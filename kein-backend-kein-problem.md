@@ -1,8 +1,10 @@
-# Leveraging Code-Sharing Platforms for Textual Digitization
+# Kein Backend, kein Problem! <br/>Wie bringen wir Inhalte lange ins Netz?
+
 <div style="align-self: start;">
-12.01.2026
+Universität Rostock, Ringvorlesung „Digital Humanities im Fokus: Methoden, Anwendungen und Perspektiven“, 12.01.2026
 </div>
 <img src="img/university-of-bern-bern.png" alt="unibe logo" class="bg" style="width: 200px; left:0; top:-10px;"/>
+
 
 <p class="bg bt-left"><a href="mailto:peter.daengeli@unibe.ch">Peter Daengeli</a>, <a href="mailto:sebastian.flick@unibe.ch">Sebastian Flick</a></p>
 <p class="bg bt-right"><a href="https://dsl.unibe.ch" target="_blank">Data Science Lab</a>, <a href="https://dh.unibe.ch" target="_blank">Digital Humanities</a>, University of Bern</p>
@@ -27,10 +29,30 @@
 </style>
 
 ---
-Find our slides here:
+Link zu dieser Präsentation:
 [https://dsl-unibe-ch.github.io/kein-backend-kein-problem](https://dsl-unibe-ch.github.io/kein-backend-kein-problem)
 
 ![qr-code](img/qr.png)
+
+---
+
+## Data Science Lab (DSL)
+
+![Data Science Lab, Universität Bern](img/dsl-site.png)
+
+---
+
+## Struktur und Rollen
+
+* Team von 4-5 KollegInnen
+* Zuständig für den Bereich *Digital Humanities* (aka *DRUIDS*, "Digital Research, User Interfaces and Data Science for the Humanities")
+* Übergreifende Koordination durch einen Domänenleiter
+
+---
+
+## Ausgewählte Kooperationen (Forschungsprojekte, Digitale Editionen, Supportfälle)
+
+(dse-as, ceresa, rdl, parzival)
 
 ---
 
