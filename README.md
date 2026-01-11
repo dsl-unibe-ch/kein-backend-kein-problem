@@ -1,6 +1,6 @@
 # kein-backend-kein-problem
 
-Presentation for the 8th IEEE Conference on Information Science and Technology (IEEE CiSt'25) / 4th IEEE Conference on Digital Preservation and processing technology of Written Heritage (IEEE DPWH)
+Presentation für die Ringvorlesung "Digital Humanities im Fokus: Methoden, Anwendungen und Perspektiven" an der Universität Rostock im Wintersemester 2025/26.
 
 ## Installation and usage
 
@@ -11,7 +11,7 @@ Requirements: node and npm
 
 If you want to use the CLI-options of eloc, use `npm exec -- eloc`.
 
-Or simlply `eloc deck.md`
+Or simlply `eloc kein-backend-kein-problem.md`
 
 ## Commands
 
