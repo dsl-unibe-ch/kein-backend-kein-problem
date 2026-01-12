@@ -80,7 +80,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 </style>
 ---
 
-## Code-sharing-Plattformen nutzen (CSP)
+## Code-sharing-Plattformen nutzen
 <div style="display: flex;">
 <div>
 
@@ -88,7 +88,14 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 - Development
 - Deployment
 
+<div style="font-size: large;">
+
+CSP: _Code sharing platform_
+
 </div>
+</div>
+
+
 
 ![Code-sharing-Plattformen](img/code-sharing-platforms-2.png)
 
