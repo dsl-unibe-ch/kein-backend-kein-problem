@@ -58,9 +58,12 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 ---
 
-## Ausgewählte Kooperationen (Forschungsprojekte, Digitale Editionen, Supportfälle)
+## Aktuelle Beispiele
 
-(dse-as, ceresa, rdl, parzival)
+|||
+|:--:|:--:|
+|![Digital Scholarly Edition Annemarie Schwarzenbach; Söldnerbiographien Neues Museum Biel](img/dseas-nmb.png)|![République des Lettres (Herbar-Datenedition); Parzival](img/rdl-parzival.png)|
+
 
 ---
 
@@ -139,7 +142,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 |Problem|Mangelnde Übersicht über viele Issues und  daran arbeitende Personen.|
 |Ansatz|Wir erstellen Kanban Boards|
 |CSP (GitHub)|GitHub **kanban boards**|
-|Limitation|Zu umfassendem Projektmanagement fehlen einige Features (Zeiterfassung, projektübergreifende Übersicht etc.)|
+|Grenzen|Zu umfassendem Projektmanagement fehlen einige Features (Zeiterfassung, projektübergreifende Übersicht etc.)|
 
 ---
 
@@ -258,7 +261,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 |Problem|TEI-Dateien werden während der manuellen Bearbeitung und Annotation auf einem Server gespeichert. Änderungen und Projektfortschritt lassen sich nicht ohne erheblichen Mehraufwand für die Editierenden verfolgen.|
 |Ansatz|Automatisierte Versionskontrolle (Git) zur Nachverfolgung von Änderungen und als zusätzliche Sicherung.|
 |CSP (GitHub)|In festgelegten Intervallen (z. B. alle 6 Stunden) werden alle veränderten Dateien abgeholt und per **scheduled action** im GitHub-Repository gesichert.|
-|Limitation|Commits bilden zeitliche Schnappschüsse ab, nicht Aufgaben oder Workflow‑Schritte.|
+|Grenzen|Commits bilden zeitliche Schnappschüsse ab, nicht Aufgaben oder Workflow‑Schritte.|
 
 ---
   
@@ -323,7 +326,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 |Problem|Der Betrieb von Backend‑Servern und Datenbanken verursacht hohen Wartungsaufwand, Sicherheitsrisiken und laufende Kosten.|
 |Ansatz|Statische Websites sind sicher, schnell und wartungsarm.|
 |CSP (GitHub)|GitHub **Actions** und **Pages**|
-|Limitation|Für dynamische Funktionalitäten (Suche, IIIF usw.) nutzen wir universitätsweite Dienste.|
+|Grenzen|Für dynamische Funktionalitäten (Suche, IIIF usw.) nutzen wir universitätsweite Dienste.|
 
 ---
   
