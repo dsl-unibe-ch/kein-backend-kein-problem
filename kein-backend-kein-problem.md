@@ -317,8 +317,6 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 |||
 |:--:|:--:|
-|||
-|:--:|:--:|
 |Problem|Der Betrieb von Backend‑Servern und Datenbanken verursacht hohen Wartungsaufwand, Sicherheitsrisiken und laufende Kosten.|
 |Approach|Statische Websites sind sicher, schnell und wartungsarm.|
 |CSP (GitHub)|GitHub **Actions** und **Pages**|
