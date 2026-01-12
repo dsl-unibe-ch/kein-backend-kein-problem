@@ -346,12 +346,6 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 ![svelte-machine](img/svelte-machine-desktop.COMO42Ha.avif)
 
 ---
-
-Anpassung und Nutzung von SvelteKit für statische Websites
-
-SvelteKit bietet eine moderne Entwicklungsumgebung, die sehr versatil ist: das macht eine Anpassung an unseren Anwendungsfall erforderlich.
-
----
   
 <div class="footer" data-marked="5">
 
@@ -466,36 +460,6 @@ Funktionalität und Design nur im Frontend
 
 ---
 
-[statisches Backend](https://github.com/DHBern/parzival-static-api/blob/master/dist/api/json/contiguous_ranges.json)
-```json
-{
-  "meta": {
-    "generated-by": "parzival-static-api\/src\/generate.xsl",
-    "task": "contiguous-ranges",
-    "generated-on": "2024-09-04T16:16:13.951621295Z",
-    "description": "Contiguous ranges of 'Dreissiger' for each edited document;
-    this is the backbone for the overview\/linking visualisation a.k.a. 'devil's table'."
-  },
-  "contiguous-ranges": [
-    {
-      "values": [
-        [ 421, 429 ],
-        [ 636, 644 ]
-      ],
-      "label": "fr1"
-    },
-  ]
-}
-```
-<style>
-  code {
-    line-height: 1.1 !important;    
-  }
-</style>
-Strukturdateien und Metadaten versionskontrolliert über eigene API (skriptbasiert, GH Actions) als Grundlage für [erweiterte Features](https://dhbern.github.io/presentation_parzival/)
-
----
-
 [Starten der TEI-Publisher-App im build](https://github.com/DHBern/presentation_parzival/blob/main/.github/workflows/main.yml)
 
 ```
@@ -520,7 +484,7 @@ jobs:
           npm run installXar
 ```
 ---
-[Die Webseite als statische Seite mit SvelteKit _herausrechnen_ (prebuild)](https://github.com/DHBern/presentation_parzival/blob/main/src/routes/fassungen/data/%5Bthirties%5D/%2Bserver.js)
+[Die Webseite als statische Seite mit SvelteKit _herausrechnen_ (prerender)](https://github.com/DHBern/presentation_parzival/blob/main/src/routes/fassungen/data/%5Bthirties%5D/%2Bserver.js)
 
 ```javascript
 export async function entries() {
