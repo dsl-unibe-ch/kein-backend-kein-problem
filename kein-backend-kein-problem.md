@@ -38,7 +38,7 @@ Link zu dieser Präsentation:
 
 ## Data Science Lab (DSL)
 
-![Data Science Lab, Universität Bern](img/dsl-site.png)
+<img alt="Data Science Lab, Universität Bern" src="img/dsl-site.png"/>
 
 https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
@@ -67,11 +67,11 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 ---
 
-## Projekte am Leben zu erhalten ist schwierig
+## Ressourcen am Leben zu erhalten ist schwierig
 
 |||
 |:--:|:--:|
-|[![legacy-Parzival-Screenshot](img/intro-legacy-parzival.png)](https://parzival.unibe.ch/parzdb/index.php) | ![vulnerabilities of our worst codebase](img/intro-vulnerabilities.png)|
+|[![Parzival-Edition (bis 2025)](img/intro-legacy-parzival.png)](https://parzival.unibe.ch/parzdb/index.php) | ![Sicherheitsprobleme aus einem unserer Projekte](img/intro-vulnerabilities.png)|
 
 <style>
   .slide img {
@@ -80,7 +80,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 </style>
 ---
 
-## Code-sharing-Plattformen nutzen
+## Code-sharing-Plattformen nutzen (CSP)
 <div style="display: flex;">
 <div>
 
@@ -93,6 +93,8 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 ![Code-sharing-Plattformen](img/code-sharing-platforms-2.png)
 
 </div>
+
+
 
 ---
 
@@ -221,7 +223,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data generation: export aus Transkriptionsplattformen und Daten-Transformationen
+### Data generation: Export aus Transkriptionsplattformen und Daten-Transformationen
 
 |||
 |:--:|:--:|
@@ -338,11 +340,11 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data publication: Frontend Entwicklung
+### Data publication: Frontendentwicklung
 
 |||
 |:--:|:--:|
-|Problem|Obskure, Nischen‑Programmierpraktiken erschweren Onboarding und Rekrutierung.|
+|Problem|Obskure Nischen‑Programmierpraktiken erschweren Personalsuche und Onboarding.|
 |Ansatz|Der Einsatz moderner JavaScript‑Frameworks und Standards ermöglicht schnelle Entwicklung qualitativ hochwertiger Lösungen.|
 |CSP (GitHub)|Statische Website‑Generierung mit GitHub **Actions** (geht weit über SSG‑Tools wie Jekyll hinaus).|
 
@@ -358,7 +360,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data publication: web hosting mit Github Pages
+### Data publication: Webhosting mit Github Pages
 
 |||
 |:--:|:--:|
@@ -429,7 +431,7 @@ Contra:
 - entkoppelt vom Dateisystem; keine direkte Versionierung
 - laufende Anwendung erforderlich
 - viel Abstraktion, oft hohe Komplexität
-- Betrieb bedingt Spezialwissen (z.B. für Backup/Restore Updates)
+- Betrieb bedingt Spezialwissen (z.B. für Backup/Restore, Updates)
 
 ---
 
@@ -451,7 +453,7 @@ kleingranular möglich durch [XQuery-API (rendered snippets)](https://dhbern.git
 
 ---
 
-ODD nur CSS-Klassen
+In der ODD werden nur CSS-Klassen zugewiesen.
 ```
 <elementSpec ident="seg" mode="change">
     <model behaviour="inline" cssClass="glory-initial">
@@ -511,8 +513,10 @@ export const prerender = true;
 [dhbern.github.io/presentation_parzival/](https://dhbern.github.io/presentation_parzival/)
 ---
 Vorteile
-- extreme Langlebigkeit
+- solide Grundlage zum Langzeitbetrieb
+- inhaltliche Anpassungen sind möglich
 - praktisch keine Wartung nötig
+- Wartung ohne Domänenkenntnisse möglich
 - hohe Performanz
 - hohe Zugänglichkeit
 - Nachhaltig, da nicht rechenaufwändig
@@ -520,7 +524,7 @@ Vorteile
 Nachteile
 
 - keine Server-seitige Suche möglich (client-seitig schon)
-- lange buildzeiten (3h)
+- lange build-Zeiten (3h)
 - keine voll ausgereifte API
 ---
 
