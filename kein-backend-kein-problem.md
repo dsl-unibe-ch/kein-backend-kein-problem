@@ -159,7 +159,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data generation: gezielte IIIF Manifeste
+### Data generation: Einheitliche IIIF-Manifeste
 
 |||
 |:--:|:--:|
@@ -179,7 +179,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 |||
 |:--:|:--:|
-|[![Generating IIIF manifests from YAML files by Git Commit](img/data-generation-iiif-manifests.png)]() | ![Result of the manifest generation](img/data-generation-iiif-manifest-index.png)|
+|[![Generierung von IIIF-Manifesten ab YAML-Dateien durch Git Commits](img/data-generation-iiif-manifests.png)]() | ![Resultat der Manifest-Generierung](img/data-generation-iiif-manifest-index.png)|
 
 ---
   
@@ -191,7 +191,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data generation: import zu Transkriptionsplattformen
+### Data generation: Import auf Transkriptionsplattformen
 
 |||
 |:--:|:--:|
@@ -321,7 +321,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-## Data publication: as static as possible
+## Data publication: statisch heißt stetig
 
 |||
 |:--:|:--:|
@@ -435,7 +435,7 @@ Contra:
 
 ---
 
-## Überblick über den Workflow anhand von Parzival
+## Einblick in den Workflow am Beispiel des Parzival
 Konzept: <del>teiPublisher</del> → Popup-Publisher
 ---
 
@@ -510,7 +510,10 @@ export const prerender = true;
 ### Resultat
 8 GB an HTML, CSS und JS Dateien
 
-[dhbern.github.io/presentation_parzival/](https://dhbern.github.io/presentation_parzival/)
+(ohne Bilder; diese werden clientseitig direkt vom IIIF-Server der Universitätsbibliothek eingebunden)
+
+[dhbern.github.io/presentation_parzival](https://dhbern.github.io/presentation_parzival/)
+
 ---
 Vorteile
 - solide Grundlage zum Langzeitbetrieb
@@ -524,7 +527,7 @@ Vorteile
 Nachteile
 
 - keine Server-seitige Suche möglich (client-seitig schon)
-- lange build-Zeiten (3h)
+- lange build-Zeiten (4h)
 - keine voll ausgereifte API
 ---
 
