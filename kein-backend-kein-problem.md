@@ -412,10 +412,23 @@ steps:
 ```
 
 </div>
+---
+## Exkurs: TEI-Publisher eine taugliche out-of-the-box Lösung?
 
 ---
+![](img/teipb.png)
+---
+Pro:
+- Weit verbreitet (daCH)
+- verspricht enorm viele Funktionen
 
-# Überblick über den Workflow anhand von Parzival
+Contra:
+- keine Versionierung
+- laufende Anwendung
+- und weiteres
+---
+
+## Überblick über den Workflow anhand von Parzival
 Konzept: Popup-Publisher
 ---
 
@@ -517,7 +530,7 @@ export const prerender = true;
 ![](img/mermaid-diagram-2024-12-04-102140.png)
 
 ---
-## Resultat
+### Resultat
 8 GB an HTML, CSS und JS Dateien
 
 [dhbern.github.io/presentation_parzival/](https://dhbern.github.io/presentation_parzival/)
