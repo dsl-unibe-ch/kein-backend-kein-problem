@@ -116,7 +116,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Project management: Issues erstellen
+### ` Project management ` Issues erstellen
 
 |||
 |:--:|:--:|
@@ -137,7 +137,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Project management: Kanban Boards
+### ` Project management ` Kanban Boards
 
 |||
 |:--:|:--:|
@@ -159,7 +159,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data generation: Einheitliche IIIF-Manifeste
+### ` Data generation ` Einheitliche IIIF-Manifeste
 
 |||
 |:--:|:--:|
@@ -191,7 +191,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data generation: Import auf Transkriptionsplattformen
+### ` Data generation ` Import auf Transkriptionsplattformen
 
 |||
 |:--:|:--:|
@@ -223,7 +223,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data generation: Export aus Transkriptionsplattformen und Daten-Transformationen
+### ` Data generation ` Export aus Transkriptionsplattformen und Daten-Transformationen
 
 |||
 |:--:|:--:|
@@ -256,7 +256,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data management: Versionierung von Textdaten
+### ` Data management ` Versionierung von Textdaten
 
 |||
 |:--:|:--:|
@@ -289,7 +289,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data provision: Generierung statischer Outputs
+### ` Data provision ` Generierung statischer Outputs
 
 |||
 |:--:|:--:|
@@ -321,7 +321,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-## Data publication: statisch heißt stetig
+### ` Data publication ` statisch heißt stetig
 
 |||
 |:--:|:--:|
@@ -340,7 +340,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data publication: Frontendentwicklung
+### ` Data publication ` Frontendentwicklung
 
 |||
 |:--:|:--:|
@@ -360,7 +360,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 </div>
 
-### Data publication: Webhosting mit Github Pages
+### ` Data publication ` Webhosting mit Github Pages
 
 |||
 |:--:|:--:|
