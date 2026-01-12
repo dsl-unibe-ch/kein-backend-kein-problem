@@ -6,7 +6,7 @@ Universität Rostock, Ringvorlesung „Digital Humanities im Fokus: Methoden, An
 <img src="img/university-of-bern-bern.png" alt="unibe logo" class="bg" style="width: 200px; left:0; top:-10px;"/>
 
 
-<p class="bg bt-left"><a href="mailto:peter.daengeli@unibe.ch">Peter Daengeli</a>, <a href="mailto:sebastian.flick@unibe.ch">Sebastian Flick</a></p>
+<p class="bg bt-left"><a href="mailto:peter.daengeli@unibe.ch">Peter Dängeli</a>, <a href="mailto:sebastian.flick@unibe.ch">Sebastian Flick</a></p>
 <p class="bg bt-right"><a href="https://dsl.unibe.ch" target="_blank">Data Science Lab</a>, <a href="https://dh.unibe.ch" target="_blank">Digital Humanities</a>, Universität Bern</p>
 
 <style>
@@ -50,6 +50,11 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 * Zuständig für den Bereich *Digital Humanities* (aka *DRUIDS*, "Digital Research, User Interfaces and Data Science for the Humanities")
 * Zurzeit betreuen wir 34 Projekte (laufend oder in Planung)
 * Übergreifende Koordination durch einen Domänenleiter
+
+---
+## DH-Projekte am DSL, 2026
+
+![DH-Projekte am DSL, 2026](img/dsl-dh-projects.png)
 
 ---
 
@@ -250,8 +255,6 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 |||
 |:--:|:--:|
-|||
-|:--:|:--:|
 |Problem|TEI-Dateien werden während der manuellen Bearbeitung und Annotation auf einem Server gespeichert. Änderungen und Projektfortschritt lassen sich nicht ohne erheblichen Mehraufwand für die Editierenden verfolgen.|
 |Approach|Automatisierte Versionskontrolle (Git) zur Nachverfolgung von Änderungen und als zusätzliche Sicherung.|
 |CSP (GitHub)|In festgelegten Intervallen (z. B. alle 6 Stunden) werden alle veränderten Dateien abgeholt und per **scheduled action** im GitHub-Repository gesichert.|
@@ -348,7 +351,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 Anpassung und Nutzung von SvelteKit für statische Websites
 
-SvelteKit bietet eine moderne Entwicklungsumgebung die sehr versatil ist: heisst: anpassung an unseren use-case ist nötig.
+SvelteKit bietet eine moderne Entwicklungsumgebung, die sehr versatil ist: heisst: anpassung an unseren use-case ist nötig.
 
 ---
   
