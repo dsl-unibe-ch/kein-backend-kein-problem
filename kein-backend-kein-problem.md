@@ -224,7 +224,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 |:--:|:--:|
 |Problem|Das Exportieren von Transkriptionen aus Transkribus kann knifflig sein, da die Plattform unterschiedliche Dateinamen verwendet und die eingebauten Transformationen nicht den Projektanforderungen entsprechen.|
 |Approach|Nutzung von Projekt‑IDs und den zuvor erzeugten IIIF‑Manifests, um Transkriptionen gemäss den Projektvorgaben zu exportieren und zu transformieren.|
-|CSP (GitHub)|Durch das Öffnen eines **issue** und die Angabe einer Dokument‑ID holt eine GitHub‑Action die Transkriptionen, ordnet die korrekten Bilddateinamen zu und wendet kundenspezifische strukturelle Transformationen an.|
+|CSP (GitHub)|Durch das Öffnen eines **issue** und die Angabe einer Dokument‑ID holt eine GitHub‑Action die Transkriptionen, ordnet die korrekten Bilddateinamen zu und wendet projektspezifische strukturelle Transformationen an.|
 
 ---
   
@@ -288,8 +288,8 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 |||
 |:--:|:--:|
-|Problem|Für Präsentationsausgaben werden spezifische Datenrepräsentationen benötigt. Gleichzeitig sind wir nicht in der Lage, massgefertigte dynamische Systeme langfristig am Laufen zu halten.|
-|Approach|Vorabgenerierung von Zwischen- und Distributionsformaten für Transkriptionen, Annotationen und andere Projektressourcen.|
+|Problem|Zur Publikation werden spezifische Datenrepräsentationen benötigt. Gleichzeitig sind wir nicht in der Lage, maßgefertigte dynamische Systeme langfristig am Laufen zu halten.|
+|Approach|Vorabgenerierung von Intermediär- und Distributionsformaten für Transkriptionen, Annotationen und andere Projektressourcen.|
 |CSP (GitHub)|Bereitstellung der Ergebnisse der Generierungspipelines (XProc, XSLT) als **GitHub Page** („static API“).|
 
 ---
@@ -349,7 +349,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 Anpassung und Nutzung von SvelteKit für statische Websites
 
-SvelteKit bietet eine moderne Entwicklungsumgebung, die sehr versatil ist: das heisst: Anpassung an unseren Anwendungsfall ist nötig.
+SvelteKit bietet eine moderne Entwicklungsumgebung, die sehr versatil ist: das macht eine Anpassung an unseren Anwendungsfall erforderlich.
 
 ---
   
