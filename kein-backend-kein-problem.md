@@ -139,7 +139,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 |Problem|Die Übersicht über viele Issues und der daran arbeitenden Personen ist schwierig|
 |Approach|Wir erstellen Kanban Boards|
 |CSP (GitHub)|GitHub **kanban boards**|
-|Limitation|Das zum vollen Projektmanagement fehlen einige Features. (Zeiterfassung, etc.)|
+|Limitation|Zu umfassendem Projektmanagement fehlen einige Features (Zeiterfassung, etc.)|
 
 ---
 
@@ -349,7 +349,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 Anpassung und Nutzung von SvelteKit für statische Websites
 
-SvelteKit bietet eine moderne Entwicklungsumgebung, die sehr versatil ist: heisst: anpassung an unseren use-case ist nötig.
+SvelteKit bietet eine moderne Entwicklungsumgebung, die sehr versatil ist: das heisst: Anpassung an unseren Anwendungsfall ist nötig.
 
 ---
   
