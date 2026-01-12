@@ -413,10 +413,15 @@ steps:
 
 </div>
 ---
-## Exkurs: TEI-Publisher eine taugliche out-of-the-box Lösung?
+## Exkurs: TEI-Publisher eine taugliche Fertiglösung?
 
----
-![](img/teipb.png)
+![TeiPublisher](img/teipb.png)
+
+<style>
+  .slide img {
+    max-height: 500px;        
+    }
+</style>
 ---
 Pro:
 - Weit verbreitet (daCH)
