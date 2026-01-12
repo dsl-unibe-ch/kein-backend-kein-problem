@@ -48,7 +48,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 * Team von 5-7 KollegInnen
 * Zuständig für den Bereich *Digital Humanities* (aka *DRUIDS*, "Digital Research, User Interfaces and Data Science for the Humanities")
-* Zurzeit betreuen wir 34 Projekte (laufend oder in Planung)
+* Zurzeit betreuen wir gut 30 Projekte (laufend oder in Planung)
 * Übergreifende Koordination durch einen Domänenleiter
 
 ---
@@ -115,8 +115,8 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 |||
 |:--:|:--:|
-|Problem|Projekte haben eine lange Dauer und mehrere Mitarbeiter|
-|Approach|Wir erstellen Issues, denen wir Fälligkeiten und verantwortliche Personen zuweisen.|
+|Problem|Projekte haben eine lange Dauer und mehrere Mitarbeiter.|
+|Ansatz|Wir erstellen Issues, denen wir Fälligkeiten und verantwortliche Personen zuweisen.|
 |CSP (GitHub)|GitHub **issues**|
 
 ---
@@ -136,10 +136,10 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 |||
 |:--:|:--:|
-|Problem|Die Übersicht über viele Issues und der daran arbeitenden Personen ist schwierig|
-|Approach|Wir erstellen Kanban Boards|
+|Problem|Mangelnde Übersicht über viele Issues und  daran arbeitende Personen.|
+|Ansatz|Wir erstellen Kanban Boards|
 |CSP (GitHub)|GitHub **kanban boards**|
-|Limitation|Zu umfassendem Projektmanagement fehlen einige Features (Zeiterfassung, etc.)|
+|Limitation|Zu umfassendem Projektmanagement fehlen einige Features (Zeiterfassung, projektübergreifende Übersicht etc.)|
 
 ---
 
@@ -191,7 +191,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 |||
 |:--:|:--:|
 |Problem|Das Hochladen von Bildern (z. B. zu Transkribus) ist oft mühsam — Beschaffung der Bilder, Upload, Nachverfolgung von Dateinamen/IDs, Zugriffsfreigaben usw.|
-|Approach|Wir nutzen die zuvor erzeugten IIIF‑Manifeste, um den gesamten Workflow zu automatisieren.|
+|Ansatz|Wir nutzen die zuvor erzeugten IIIF‑Manifeste, um den gesamten Workflow zu automatisieren.|
 |CSP (GitHub)|Durch das Öffnen eines **issue** und die Angabe der Manifeste sowie einer Ziel‑Collection holt eine GitHub‑Action die IIIF‑Bilder und lädt sie zu Transkribus hoch.|
 
 ---
@@ -223,7 +223,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 |||
 |:--:|:--:|
 |Problem|Das Exportieren von Transkriptionen aus Transkribus kann knifflig sein, da die Plattform unterschiedliche Dateinamen verwendet und die eingebauten Transformationen nicht den Projektanforderungen entsprechen.|
-|Approach|Nutzung von Projekt‑IDs und den zuvor erzeugten IIIF‑Manifests, um Transkriptionen gemäss den Projektvorgaben zu exportieren und zu transformieren.|
+|Ansatz|Nutzung von Projekt‑IDs und den zuvor erzeugten IIIF‑Manifests, um Transkriptionen gemäss den Projektvorgaben zu exportieren und zu transformieren.|
 |CSP (GitHub)|Durch das Öffnen eines **issue** und die Angabe einer Dokument‑ID holt eine GitHub‑Action die Transkriptionen, ordnet die korrekten Bilddateinamen zu und wendet projektspezifische strukturelle Transformationen an.|
 
 ---
@@ -256,7 +256,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 |||
 |:--:|:--:|
 |Problem|TEI-Dateien werden während der manuellen Bearbeitung und Annotation auf einem Server gespeichert. Änderungen und Projektfortschritt lassen sich nicht ohne erheblichen Mehraufwand für die Editierenden verfolgen.|
-|Approach|Automatisierte Versionskontrolle (Git) zur Nachverfolgung von Änderungen und als zusätzliche Sicherung.|
+|Ansatz|Automatisierte Versionskontrolle (Git) zur Nachverfolgung von Änderungen und als zusätzliche Sicherung.|
 |CSP (GitHub)|In festgelegten Intervallen (z. B. alle 6 Stunden) werden alle veränderten Dateien abgeholt und per **scheduled action** im GitHub-Repository gesichert.|
 |Limitation|Commits bilden zeitliche Schnappschüsse ab, nicht Aufgaben oder Workflow‑Schritte.|
 
@@ -289,7 +289,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 |||
 |:--:|:--:|
 |Problem|Zur Publikation werden spezifische Datenrepräsentationen benötigt. Gleichzeitig sind wir nicht in der Lage, maßgefertigte dynamische Systeme langfristig am Laufen zu halten.|
-|Approach|Vorabgenerierung von Intermediär- und Distributionsformaten für Transkriptionen, Annotationen und andere Projektressourcen.|
+|Ansatz|Vorabgenerierung von Intermediär- und Distributionsformaten für Transkriptionen, Annotationen und andere Projektressourcen.|
 |CSP (GitHub)|Bereitstellung der Ergebnisse der Generierungspipelines (XProc, XSLT) als **GitHub Page** („static API“).|
 
 ---
@@ -321,7 +321,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 |||
 |:--:|:--:|
 |Problem|Der Betrieb von Backend‑Servern und Datenbanken verursacht hohen Wartungsaufwand, Sicherheitsrisiken und laufende Kosten.|
-|Approach|Statische Websites sind sicher, schnell und wartungsarm.|
+|Ansatz|Statische Websites sind sicher, schnell und wartungsarm.|
 |CSP (GitHub)|GitHub **Actions** und **Pages**|
 |Limitation|Für dynamische Funktionalitäten (Suche, IIIF usw.) nutzen wir universitätsweite Dienste.|
 
@@ -340,7 +340,7 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 |||
 |:--:|:--:|
 |Problem|Obskure, Nischen‑Programmierpraktiken erschweren Onboarding und Rekrutierung.|
-|Approach|Der Einsatz moderner JavaScript‑Frameworks und Standards ermöglicht schnelle Entwicklung qualitativ hochwertiger Lösungen.|
+|Ansatz|Der Einsatz moderner JavaScript‑Frameworks und Standards ermöglicht schnelle Entwicklung qualitativ hochwertiger Lösungen.|
 |CSP (GitHub)|Statische Website‑Generierung mit GitHub **Actions** (geht weit über SSG‑Tools wie Jekyll hinaus).|
 
 ![svelte-machine](img/svelte-machine-desktop.COMO42Ha.avif)
@@ -366,7 +366,7 @@ SvelteKit bietet eine moderne Entwicklungsumgebung, die sehr versatil ist: das m
 |||
 |:--:|:--:|
 |Problem|Das Hosten generierter Seiten auf eigenen virtuellen Maschinen ist mit höherem Wartungsaufwand verbunden.|
-|Approach|Wir nutzen GitHub Pages, um sichere und schnelle statische Websites bereitzustellen.|
+|Ansatz|Wir nutzen GitHub Pages, um sichere und schnelle statische Websites bereitzustellen.|
 |CSP (GitHub)|GitHub **Pages**|
 
 ---
@@ -413,7 +413,7 @@ steps:
 
 </div>
 ---
-## Exkurs: TEI-Publisher eine taugliche Fertiglösung?
+## Exkurs: teiPublisher – eine taugliche Fertiglösung?
 
 ![TeiPublisher](img/teipb.png)
 
@@ -424,17 +424,20 @@ steps:
 </style>
 ---
 Pro:
-- Weit verbreitet (daCH)
+- Verbreitung, Community (D-A-CH)
 - verspricht enorm viele Funktionen
+- definiertes TEI-Rendering für viele Elemente/Strukturen
 
 Contra:
-- keine Versionierung
-- laufende Anwendung
-- und weiteres
+- entkoppelt vom Dateisystem; keine direkte Versionierung
+- laufende Anwendung erforderlich
+- viel Abstraktion, oft hohe Komplexität
+- Betrieb bedingt Spezialwissen (z.B. für Backup/Restore Updates)
+
 ---
 
 ## Überblick über den Workflow anhand von Parzival
-Konzept: Popup-Publisher
+Konzept: <del>teiPublisher</del> → Popup-Publisher
 ---
 
 TEIPublisher nur für rendering der text views / Transkriptionen
