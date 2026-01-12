@@ -414,4 +414,126 @@ steps:
 </div>
 
 ---
-Vielen Dank für Ihre Aufmerksamkeit!
+
+# Überblick über den Workflow anhand von Parzival
+Konzept: Popup-Publisher
+---
+
+TEIPublisher nur für rendering der text views / Transkriptionen
+
+```
+fetch(
+`${teipb}/parts/${element.handle}.xml/json
+?odd=parzival.odd
+&view=single
+&xpath=//text/body/l[@xml:id=%27${element.handle}_${thirties}.${verse}%27]`)
+```
+
+kleingranular möglich durch [XQuery-API (rendered snippets)](https://dhbern.github.io/presentation_parzival/einzelverssynopse/103/07)
+
+---
+
+ODD nur CSS-Klassen
+```
+<elementSpec ident="seg" mode="change">
+    <model behaviour="inline" cssClass="glory-initial">
+        <param name="subtype" value="Prachtinitiale"/>
+    </model>
+    <model behaviour="inline" cssClass="initial" useSourceRendition="true">
+        <param name="type" value="Initiale"/>
+    </model>
+</elementSpec>
+```
+Funktionalität und Design nur im Frontend
+
+---
+
+[statisches Backend](https://github.com/DHBern/parzival-static-api/blob/master/dist/api/json/contiguous_ranges.json)
+```json
+{
+  "meta": {
+    "generated-by": "parzival-static-api\/src\/generate.xsl",
+    "task": "contiguous-ranges",
+    "generated-on": "2024-09-04T16:16:13.951621295Z",
+    "description": "Contiguous ranges of 'Dreissiger' for each edited document;
+    this is the backbone for the overview\/linking visualisation a.k.a. 'devil's table'."
+  },
+  "contiguous-ranges": [
+    {
+      "values": [
+        [ 421, 429 ],
+        [ 636, 644 ]
+      ],
+      "label": "fr1"
+    },
+  ]
+}
+```
+<style>
+  code {
+    line-height: 1.1 !important;    
+  }
+</style>
+Strukturdateien und Metadaten versionskontrolliert über eigene API (skriptbasiert, GH Actions) als Grundlage für [erweiterte Features](https://dhbern.github.io/presentation_parzival/)
+
+---
+
+[Starten der TEI-Publisher-App im build](https://github.com/DHBern/presentation_parzival/blob/main/.github/workflows/main.yml)
+
+```
+jobs:
+  build_site:
+    runs-on: ubuntu-latest
+    services:
+      existdb:
+        image: existdb/existdb:6.2.0
+        ports:
+          - 8081:8080
+    steps:
+      - name: Install dependencies
+        run: npm ci
+
+      - name: start docker
+        env:
+          EXISTDB_USER: 'admin'
+          EXISTDB_PASS: ''
+          EXISTDB_SERVER: 'http://127.0.0.1:8081'
+        run: |
+          npm run installXar
+```
+---
+[Die Webseite als statische Seite mit SvelteKit _herausrechnen_ (prebuild)](https://github.com/DHBern/presentation_parzival/blob/main/src/routes/fassungen/data/%5Bthirties%5D/%2Bserver.js)
+
+```javascript
+export async function entries() {
+	const entriesArray = Array.from({ length: 827 }, (_, i) => ({ thirties: String(i + 1) }));
+	return entriesArray;
+}
+
+export const prerender = true;
+```
+---
+
+![](img/mermaid-diagram-2024-12-04-102140.png)
+
+---
+## Resultat
+8 GB an HTML, CSS und JS Dateien
+
+[dhbern.github.io/presentation_parzival/](https://dhbern.github.io/presentation_parzival/)
+---
+Vorteile
+- extreme Langlebigkeit
+- praktisch keine Wartung nötig
+- hohe Performanz
+- hohe Zugänglichkeit
+- Nachhaltig, da nicht rechenaufwändig
+---
+Nachteile
+
+- keine Server-seitige Suche möglich (client-seitig schon)
+- lange buildzeiten (3h)
+- keine voll ausgereifte API
+---
+
+Danke für die Aufmerksamkeit.
