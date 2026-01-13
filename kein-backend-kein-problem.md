@@ -149,9 +149,9 @@ CSP: _Code sharing platform_
 |||
 |:--:|:--:|
 |Problem|Mangelnde Übersicht über viele Issues und  daran arbeitende Personen.|
-|Ansatz|Wir erstellen Kanban Boards|
+|Ansatz|Wir erstellen Kanban Boards.|
 |CSP (GitHub)|GitHub **kanban boards**|
-|Grenzen|Zu umfassendem Projektmanagement fehlen einige Features (Zeiterfassung, projektübergreifende Übersicht etc.)|
+|Grenzen|Zu umfassendem Projektmanagement fehlen einige Features (Zeiterfassung, projektübergreifende Übersicht etc.).|
 
 ---
 
@@ -235,7 +235,7 @@ CSP: _Code sharing platform_
 |||
 |:--:|:--:|
 |Problem|Das Exportieren von Transkriptionen aus Transkribus kann knifflig sein, da die Plattform unterschiedliche Dateinamen verwendet und die eingebauten Transformationen nicht den Projektanforderungen entsprechen.|
-|Ansatz|Nutzung von Projekt‑IDs und den zuvor erzeugten IIIF‑Manifests, um Transkriptionen gemäss den Projektvorgaben zu exportieren und zu transformieren.|
+|Ansatz|Nutzung von Projekt‑IDs und den zuvor erzeugten IIIF‑Manifests, um Transkriptionen gemäß den Projektvorgaben zu exportieren und zu transformieren.|
 |CSP (GitHub)|Durch das Öffnen eines **issue** und die Angabe einer Dokument‑ID holt eine GitHub‑Action die Transkriptionen, ordnet die korrekten Bilddateinamen zu und wendet projektspezifische strukturelle Transformationen an.|
 
 ---
